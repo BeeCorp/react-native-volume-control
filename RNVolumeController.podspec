@@ -10,12 +10,10 @@ Pod::Spec.new do |s|
   s.license             = package['license']
   s.author              = package['author']
   s.source              = { :git => package['repository']['url'], :tag => "v#{s.version}" }
-  s.default_subspec     = 'Main'
   s.requires_arc        = true
-  s.platform            = :ios, "7.0"
+  s.platform            = :ios, '10.0'
   s.preserve_paths      = "**/*.js"
+  s.source_files        = "ios/**/*.{h,m}"
 
-  s.subspec 'Main' do |ss|
-    ss.source_files     = "ios/RNVolumeControl.{h,m}"
-  end
+  s.dependency 'React'
 end
