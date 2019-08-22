@@ -54,6 +54,7 @@ RCT_EXPORT_MODULE(VolumeControl)
 - (void)initVolumeView{
     volumeView = [[MPVolumeView alloc] initWithFrame:CGRectZero];
     volumeView.showsRouteButton = NO;
+    volumeView.showsVolumeSlider = NO;
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     [window addSubview:volumeView];
     
@@ -81,6 +82,7 @@ RCT_EXPORT_MODULE(VolumeControl)
 
 - (void)dealloc {
     [audioSession removeObserver:self forKeyPath:@"outputVolume"];
+    [volumeView removeFromSuperview];
 }
 
 
