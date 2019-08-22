@@ -52,9 +52,9 @@ RCT_EXPORT_MODULE(VolumeControl)
 
 
 - (void)initVolumeView{
-    volumeView = [[MPVolumeView alloc] init];
+    volumeView = [[MPVolumeView alloc] initWithFrame:CGRectZero];
     volumeView.showsRouteButton = NO;
-    volumeView.showsVolumeSlider = NO;
+    volumeView.showsVolumeSlider = YES;
     
     for (UIView *view in volumeView.subviews) {
         if ([view isKindOfClass:[UISlider class]]) {
@@ -72,7 +72,8 @@ RCT_EXPORT_MODULE(VolumeControl)
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     if ([keyPath isEqual:@"outputVolume"] && hasListeners) {
-            float newVolume = [[AVAudioSession sharedInstance] outputVolume];
+            volumeViewSlider.value = volumeViewSlider.value;
+            float newVolume = volumeViewSlider.value;
             [self sendEventWithName:@"VolumeChanged" body:@{@"volume": [NSNumber numberWithFloat: newVolume]}];
     }
 }
