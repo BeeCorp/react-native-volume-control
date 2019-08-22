@@ -53,6 +53,7 @@ RCT_EXPORT_MODULE(VolumeControl)
 
 - (void)initVolumeView{
     volumeView = [[MPVolumeView alloc] initWithFrame:CGRectZero];
+    volumeView.showsRouteButton = NO;
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     [window addSubview:volumeView];
     
