@@ -54,7 +54,8 @@ RCT_EXPORT_MODULE(VolumeControl)
 - (void)initVolumeView{
     volumeView = [[MPVolumeView alloc] initWithFrame:CGRectZero];
     volumeView.showsRouteButton = NO;
-    volumeView.showsVolumeSlider = NO;
+    volumeView.clipsToBounds = YES;
+    [volumeView setUserInteractionEnabled:NO];
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
     [window addSubview:volumeView];
     
