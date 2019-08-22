@@ -53,8 +53,8 @@ RCT_EXPORT_MODULE(VolumeControl)
 
 - (void)initVolumeView{
     volumeView = [[MPVolumeView alloc] initWithFrame:CGRectZero];
-    volumeView.showsRouteButton = NO;
-    volumeView.showsVolumeSlider = YES;
+    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+    [window addSubview:volumeView];
     
     for (UIView *view in volumeView.subviews) {
         if ([view isKindOfClass:[UISlider class]]) {
