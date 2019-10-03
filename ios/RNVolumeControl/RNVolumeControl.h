@@ -8,7 +8,4 @@
 #import <React/RCTEventEmitter.h>
 
 @interface RNVolumeControl : RCTEventEmitter <RCTBridgeModule>
-
-- (void)initVolumeView;
-- (void)setVolume:(float)volumeValue;
 @end

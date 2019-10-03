@@ -1,6 +1,6 @@
 {
   "name": "@jvgaeta/react-native-volume-control",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "Control device volume for iOS and Android",
   "main": "index.js",
   "scripts": {
