@@ -65,7 +65,6 @@ public class RNVolumeControlModule extends ReactContextBaseJavaModule
   @Override
   public void initialize() {
     super.initialize();
-
     try {
       am = (AudioManager) this.rContext.getSystemService(Context.AUDIO_SERVICE);
       max_volume = am.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
