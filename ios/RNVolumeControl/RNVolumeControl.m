@@ -69,7 +69,7 @@ RCT_EXPORT_MODULE(VolumeControl)
 
 - (void)setVolume:(float)volumeValue {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        volumeViewSlider.value = volumeViewSlider.value;
+        volumeViewSlider.value = volumeViewSlider.value > 0 ? volumeViewSlider.value - 1 : volumeViewSlider.value + 1;
     });
 }
 
