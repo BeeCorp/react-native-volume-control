@@ -31,10 +31,10 @@
 		A1DF0B771E90288A00B9A176 /* libRNVolumeControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNVolumeControl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF0B7A1E90288A00B9A176 /* RNVolumeControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNVolumeControl.h; sourceTree = "<group>"; };
 		A1DF0B7B1E90288A00B9A176 /* RNVolumeControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNVolumeControl.m; sourceTree = "<group>"; };
-		F0FAEF212346B5D800D35E19 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
 		F0FAEF222346B5F500D35E19 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
 		F0FAEF252346B78E00D35E19 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/MediaPlayer.framework; sourceTree = DEVELOPER_DIR; };
 		F0FAEF272346B79400D35E19 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		F0FAEF292346B87500D35E19 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,8 @@
 			children = (
 				A1DF0B7A1E90288A00B9A176 /* RNVolumeControl.h */,
 				A1DF0B7B1E90288A00B9A176 /* RNVolumeControl.m */,
-				F0FAEF212346B5D800D35E19 /* JPSVolumeButtonHandler.h */,
 				F0FAEF222346B5F500D35E19 /* JPSVolumeButtonHandler.m */,
+				F0FAEF292346B87500D35E19 /* JPSVolumeButtonHandler.h */,
 			);
 			path = RNVolumeControl;
 			sourceTree = "<group>";
