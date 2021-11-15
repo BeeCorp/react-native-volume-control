@@ -90,7 +90,7 @@ public class RNVolumeControlModule extends ReactContextBaseJavaModule
     }
   }
 
-  public void sendEvent(ReactContext reactContext, String eventName, @Nullable WritableMap params) {
+  public void sendEvent(ReactContext reactContext, String eventName, @NonNull WritableMap params) {
     this.rContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit(eventName, params);
   }
 
